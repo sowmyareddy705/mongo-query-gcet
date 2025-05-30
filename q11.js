@@ -9,8 +9,9 @@ db.employees.aggregate([
     $project: {
       name: 1,
       email: 1,
-      location: 1,
+      department:1,
       salary: 1,
+      location:1,
       age: 1,
       annualSalary: { $multiply: ["$salary", 12] },
       band: {
