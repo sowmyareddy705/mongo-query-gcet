@@ -27,4 +27,24 @@ db.employees.insertMany([
   },
 ]);
 
+db.employees.insertMany([
+  {
+    name: "Shawn Joseph",
+    email: "mike@gmail.com",
+    department: "Admin",
+    salary: 2456,
+    location: ["FL", "TX"],
+    date: Date(),
+  },
+  {
+    name: "Beth G",
+    email: "cathy@gmail.com",
+    department: "Admin",
+    salary: 3456,
+    location: ["AZ", "TX"],
+    date: Date(),
+  },
+]);
+
 db.employees.find();
+
